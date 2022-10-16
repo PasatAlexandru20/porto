@@ -1,13 +1,141 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;800&family=Odor+Mean+Chey&family=Roboto:wght@300&display=swap');
+
+
+*{
+  font-family: 'Inter';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@media screen and (min-width:991px) {
+  .pageContainer  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pageContainer > div {
+    width: 50%;
+  }
+  
+}
+
+body{
+  background-color: #2C2D33;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+
+.header h1{
+
+  text-align:center;
+  color:#9B9BA4;
+  margin: 0px;
+  font-size: 70px;
+  font-weight: 900px;
+  
+}
+
+.header h1 span {
+  color: #76F610;
+}
+
+.header h2 {
+
+  color:#9B9BA4;
+  font-weight: 900px;
+  font-size: 35px;
+  text-align:center;
+  margin: 0px;
+}
+.header h2 span {
+  color: #76F610;
+  
+}
+
+.section-title{
+ 
+  color: #76F610;
+  font-size: 35px;
+}
+
+.section-subtitle{
+  color: #9B9BA4;
+  font-size: 23px;
+}
+.section-text{
+  color: #9B9BA4;
+  font-size: 14px;
+}
+
+.primaryButton {
+  margin-top: 35px;
+  width: 371px;
+  height: 35px;
+  background: #0FE532;
+  text-align: center;
+  border-width: 0px;
+}
+
+.about{
+  padding: 50px;
+ 
+}
+.techstacks{
+  color:#C0C0CA;
+  padding: 90px;
+}
+
+.projects {
+  color: #C0C0CA;
+  padding: 50px;
+}
+
+.project{
+  border: 1px solid #8C8383; 
+  margin:30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project a {
+  background: linear-gradient(229.74deg, #5E5E5E 20.34%, rgba(116, 112, 112, 0) 107.11%);
+  width: 75px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project p {
+  margin: 0px;
+  padding: 0px 0px 0px 15px;
+  font-weight: 490;
+}
+
+.project h2 {
+  margin: 0px;
+  padding: 0px 0px 10px 15px;
+  
+}
+.about,s
+.techstacks{
+  /* width: 50%; */
+}
+
+.Contact {
+  color:#0FE532;
+
+}
+
+
+.secondaryButton {
+  margin-top: 35px;
+  width: 371px;
+  height: 35px;
+  background: #0FE532;
+  text-align: center;
+  border-width: 0px;
 }
