@@ -1,107 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;800&family=Odor+Mean+Chey&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;800&family=Odor+Mean+Chey&family=Roboto:wght@300&display=swap");
 
-
-*{
-  font-family: 'Inter';
+* {
+  font-family: "Inter";
+  color:#9B9BA4;
 }
 
-
-@media screen and (min-width:991px) {
-  .pageContainer  {
+@media screen and (min-width: 991px) {
+  .pageContainer {
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
   }
 
   .pageContainer > div {
     width: 50%;
+    margin-top: 65px;
   }
-  
 }
 
-body{
-  background-color: #2C2D33;
+body {
+  background-color: #2c2d33;
 }
 
 .header {
-  margin-top: 10px;
+  margin-top: 65px;
+  margin-bottom: 80;
+}
+.about {
+  
+  padding:50px;
 }
 
 
-.header h1{
+.about, .projects {
+  
+}
 
-  text-align:center;
-  color:#9B9BA4;
+.header h1 {
+  text-align: center;
   margin: 0px;
   font-size: 70px;
   font-weight: 900px;
-  
 }
 
 .header h1 span {
-  color: #76F610;
+  color: #76f610;
 }
 
 .header h2 {
-
-  color:#9B9BA4;
+ 
   font-weight: 900px;
   font-size: 35px;
-  text-align:center;
+  text-align: center;
   margin: 0px;
 }
 .header h2 span {
-  color: #76F610;
+  color: #76f610;
+}
+
+.section-title {
+  color: #76f610;
+  font-size: 35px;
   
 }
 
-.section-title{
- 
-  color: #76F610;
-  font-size: 35px;
+.section-subtitle {
+  font-size: 32px;
+  font-weight: 600;
 }
-
-.section-subtitle{
-  color: #9B9BA4;
-  font-size: 23px;
-}
-.section-text{
-  color: #9B9BA4;
-  font-size: 14px;
+.section-text {
+  font-size: 17px;
 }
 
 .primaryButton {
+  color:#ffffff;
   margin-top: 35px;
-  width: 371px;
-  height: 35px;
-  background: #0FE532;
+  width: 1125px;
+  height: 40px;
+  background: #0fe532;
   text-align: center;
   border-width: 0px;
 }
 
-.about{
-  padding: 50px;
- 
-}
-.techstacks{
-  color:#C0C0CA;
-  padding: 90px;
+.secondaryButton {
+  color:#ffffff;
+  margin-top: 35px;
+  width: 999px;
+  height: 40px;
+  background: #0fe532;
+  text-align: center;
+  border-width: 0px;
 }
 
 .projects {
-  color: #C0C0CA;
+  color: #c0c0ca;
   padding: 50px;
 }
 
-.project{
-  border: 1px solid #8C8383; 
-  margin:30px 0px;
+.project {
+  border: 1px solid #8c8383;
+  margin: 30px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.project h2 {
+  margin: 0px;
+  padding: 0px 0px 10px 15px;
+}
+
 .project a {
-  background: linear-gradient(229.74deg, #5E5E5E 20.34%, rgba(116, 112, 112, 0) 107.11%);
+  background: linear-gradient(
+    229.74deg,
+    #5e5e5e 20.34%,
+    rgba(116, 112, 112, 0) 107.11%);
   width: 75px;
   height: 60px;
   display: flex;
@@ -115,27 +128,83 @@ body{
   font-weight: 490;
 }
 
-.project h2 {
+.techstack {
+  position: relative;
+  width: 500px;
+  margin-bottom: 25px;
+}
+
+.techstack > div {
+  
+  width: 100%;
+}
+
+.techstack h2 {
   margin: 0px;
   padding: 0px 0px 10px 15px;
+}
+.techstack a {
+  display: flex;
+  justify-content: left;
+  align-items: left;
   
 }
-.about,s
-.techstacks{
-  /* width: 50%; */
+.techstack p {
+  
+  margin-top:-9px;
+  padding: 0px 0px 0px 15px;
+  font-weight: 490;
+  border-bottom: 1px solid #C0C0CA;
+
+}
+.techstacks {
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+.container > div {
+  margin-left: 180px;
+  margin-top: 122 px;
+  padding: 35px;
 }
 
-.Contact {
-  color:#0FE532;
-
+.Contact > div {
+  margin-top:-15px;
 }
 
 
-.secondaryButton {
-  margin-top: 35px;
-  width: 371px;
-  height: 35px;
-  background: #0FE532;
-  text-align: center;
-  border-width: 0px;
+footer {
+display: flex;
+justify-content: space-between;
+align-items:baseline;
+}
+
+footer .header h1 {
+font-size: 35px;
+margin: 15px;
+}
+
+
+.techstack .starSvg {
+  position:absolute;
+  left: -50px;
+  bottom: 32px;
+  
+}
+
+
+.techstack .arrowSvg  {
+  margin-top: 20px;
+  margin-left: 15px;
+  position:absolute;
+  right: 5px;
+
+}
+
+.greenButton {
+  background-color: #0fe532!important;
+
+}
+
+.contactBackground {
+  background-color: #2c2d33;
 }
