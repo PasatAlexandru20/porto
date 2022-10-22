@@ -17,7 +17,6 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false)
  
 
   const submitHandler = async (e) => {
@@ -27,16 +26,13 @@ const Contact = () => {
       return toast.error("Please fill email, subject and message");
     }
     try{
-    setLoading(true)
     const {data} = await axios.post(`/api/email`, {
         email,
         message,
         name,
     })
-    setLoading(false)
     toast.success(data.message)
  } catch (err) {
-   setLoading(false)
    toast.error (
         err.response && err.response.data.message
         ? err.response.data.message

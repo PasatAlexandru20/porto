@@ -18,7 +18,7 @@ const techstacks = [{
 }]
 
 
-const Techstacks = ({}) => {
+const Techstacks = () => {
   return (
     <div className="techstacks">
         {techstacks.map(techstack => <Techstack key={techstack.title} title={techstack.title} description={techstack.description }/>)}
