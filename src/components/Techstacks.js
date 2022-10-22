@@ -21,7 +21,7 @@ const techstacks = [{
 const Techstacks = ({}) => {
   return (
     <div className="techstacks">
-        {techstacks.map(techstack => <Techstack title={techstack.title} description={techstack.description }/>)}
+        {techstacks.map(techstack => <Techstack key={techstack.title} title={techstack.title} description={techstack.description }/>)}
     </div>
   );
 };

@@ -21,7 +21,7 @@ const projects = [{
 const Projects = () => {
   return (
     <div className="projects">
-        {projects.map(project => <Project title={project.title} description={project.description}/>)}
+        {projects.map(project => <Project key={project.title} title={project.title} description={project.description}/>)}
     </div>
   );
 };

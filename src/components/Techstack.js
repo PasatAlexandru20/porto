@@ -2,7 +2,7 @@ import React from "react";
 
 const Techstack = ({ title, description }) => {
   return (
-    <div className="techstack">
+    <div className="techstack" >
       <svg
         className="arrowSvg"
         width="20"
