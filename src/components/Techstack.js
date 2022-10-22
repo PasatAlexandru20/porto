@@ -21,7 +21,7 @@ const Techstack = ({ title, description }) => {
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-      <a href="#">
+      <a href="www.google.com">
         <svg
         className="starSvg"
           width="50"
